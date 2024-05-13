@@ -8,7 +8,7 @@ pipeline {
         }
         stage('K8s') {
          steps {
-         sh 'kubectl set image deployments/hello-node agouishappy/teedybyagou:latest'
+         sh 'kubectl set image deployments/hello-node teedybyagou=agouishappy/teedybyagou:latest'
          }
        }
     }
